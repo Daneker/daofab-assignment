@@ -1,0 +1,13 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+settings:
+  parent-path: ${PARENT_PATH:/home/user/Downloads/DAOFAB/assignment/Parent.json}
+  child-path: ${CHILD_PATH:/home/user/Downloads/DAOFAB/assignment/Child.json}
+server:
+  servlet:
+    session:
+      timeout: ${SESSION_TIMEOUT:30m}
